@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="index.css">
     <title>Layout</title>
 </head>
-<body>
-    <div class="box" id="a">
-        <span>A</span>
+<body class="flex flex-wrap h-screen">
+    <div class="box bg-darkgray text-white w-full order-2 text-4xl md:order-1">
+        <span>Header</span>
     </div>
-    <div class="box" id="b">
-        <span>B</span>
+    <div class="box bg-subheader w-full order-1 md:order-2">
+        <span>Subheader</span>
     </div>
-    <div class="box" id="c">
-        <span>C</span>
+    <div class="order-3 flex flex-column flex-wrap w-full md:w-1/2">
+        <div class="box bg-login w-1/2 md:w-full">
+            <span>Login</span>
+        </div>
+        <div class="box bg-secondarycontent w-1/2 md:w-full">
+            <span>Secondary content</span>
+        </div>
     </div>
-    <div class="box" id="d">
-        <span>D</span>
+    <div class="box order-4 bg-maincontent w-full md:w-1/2">
+        <span>Main Content</span>
     </div>
-    <div class="box" id="e">
-        <span>E</span>
-    </div>
-    <div class="box" id="f">
-        <span>F</span>
+    <div class="box order-5 bg-darkgray text-white w-full">
+        <span>Footer</span>
     </div>
 </body>
 </html>

@@ -4,10 +4,8 @@
 
 @layer components{
     .box{
+        @apply uppercase font-bold flex justify-center items-center text-xl font-sans;
         min-width: 10em;
-        max-width: 10em;
-        border: solid 2px black;
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
     }
 }
